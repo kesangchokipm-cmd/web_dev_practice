@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head area-->
+<head>
+  <meta charset="utf-8">
+  <title>Mood Check Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--Body area-->
+<body>
+<h1 id="title">Mood Check Survey</h1>
+<p id="description">Check how you're feeling today!</p>
+
+<!--Form elements-->
+<form id="survey-form">
+
+<!--Name input-->
+  <label id="name-label" for="name">Name:</label>
+  <input id="name" type="text" placeholder="Enter your name" required><br><br> 
+
+<!--Email input-->
+  <label id="email-label" for="email">Email:</label>
+  <input id="email" type="email" placeholder="Enter your email" required><br><br>
+
+<!--Number input--> 
+  <label id="number-label" for="score">Mood Score:</label>
+  <input id="number" type="number" min="1" max="10" placeholder="Pick a number"><br><br>
+
+<!--Dropdown select-->
+  <label id="dropdown-label" for="dropdown">Feeling?</label>
+  <select id="dropdown">
+    <option value="">Select</option>
+    <option value="optimistic">Optimistic</option> 
+    <option value="pessimistic">Pessimistic</option>
+  </select> <br><br>
+
+<!--Radio button-->
+  <label id="radio-label" for="time">Time:</label>
+
+    <input type="radio" id="day" name="time" value="day">
+    <label for="day">Day</label>
+
+    <input type="radio" id="night" name="time" value="night">
+    <label for="night">Night</label><br><br>
+
+<!--Checkboxes-->
+  <label id="check-label">Check what could make you feel better :)</label><br><br>
+
+  <input type="checkbox" value="call" id="call" name="better">
+  <label for="call">Phone a loved one</label><br>
+  <input type="checkbox" value="sleep" id="sleep" name="better">
+   <label for="sleep">Take a nap</label><br>
+    <input type="checkbox" value="self" id="self" name="better">
+   <label for="self">Hop in for a long shower</label><br>
+    <input type="checkbox" value="light" id="light" name="better">
+   <label for="light">Light a candle</label><br>
+ <input type="checkbox" value="food" id="food" name="better">
+   <label for="food">Have a hearty meal</label><br>
+    <input type="checkbox" value="clean" id="clean" name="better">
+   <label for="clean">Clean your environment</label><br>
+   <input type="checkbox" value="movie" id="movie" name="better">
+   <label for="movie">Watch a fun movie</label><br><br>
+
+<!--Comments-->
+  <label for="comment">Any venting?</label>
+  <textarea id="comment" name="comment" rows="4" cols="40"></textarea><br><br>
+  
+<!--Submit-->
+<button id="submit" type="submit">Submit</button>
+
+<p>Don't worry, be happy <3</p>
+
+</html>
