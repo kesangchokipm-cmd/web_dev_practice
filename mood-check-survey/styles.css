@@ -1,95 +1,121 @@
-/* ===== Body & General ===== */
-body {
-  font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+/* Reset some default styles */
+body, h1, p, ul, li, label, input, select, textarea, button {
   margin: 0;
   padding: 0;
-  color: #4d1a1a;
-}
-
-/* ===== Headings ===== */
-h1, h2 {
-  text-align: center;
-  color: #b30059; /* deep pink/red */
-  margin-bottom: 1rem;
-}
-
-/* ===== Form Container ===== */
-form {
-  max-width: 500px;
-  margin: 2rem auto;
-  background: #fff0f5; /* soft pink background */
-  padding: 2.5rem;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(179, 0, 89, 0.3); /* subtle dramatic shadow */
-}
-
-/* ===== Inputs, Selects & Textareas ===== */
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin: 0.5rem 0 1.2rem 0;
-  border: 1px solid #b30059;
-  border-radius: 8px;
   box-sizing: border-box;
-  font-size: 1rem;
-  color: #4d1a1a;
-  background: #fff0f5;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* ===== Labels ===== */
+/* Body and background */
+body {
+  background: linear-gradient(to bottom, #ffe4e6, #fff0f5);
+  padding: 2rem;
+  color: #4b2e39; /* deep romantic text color */
+}
+
+/* Main title */
+#title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #d94f70; /* pinkish-red */
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Description paragraph */
+#description {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #7a4b58;
+}
+
+/* Form container styling */
+.form-container, #survey-form {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  background: rgba(255, 240, 245, 0.8); /* soft pink overlay */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Labels */
 label {
   display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  color: #800040;
+  margin: 0.5rem 0 0.2rem 0;
+  font-weight: 600;
+  color: #a14a63;
 }
 
-/* ===== Radio Buttons & Checkboxes ===== */
-input[type="radio"],
-input[type="checkbox"] {
+/* Inputs, selects, textarea */
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #e2b0c9;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #d94f70;
+  box-shadow: 0 0 5px rgba(217, 79, 112, 0.5);
+}
+
+/* Radio and checkbox adjustments */
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
   margin-right: 0.5rem;
 }
 
-/* ===== Placeholder Text ===== */
-::placeholder {
-  color: #b36699;
-  font-style: italic;
-}
-
-/* ===== Button ===== */
+/* Button styling */
 button {
-  background-color: #ff3399;
-  color: white;
+  background-color: #d94f70;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
   border: none;
-  padding: 0.8rem 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 1.1rem;
-  margin-top: 1rem;
   transition: all 0.3s ease;
+  margin-top: 1rem;
 }
 
 button:hover {
-  background-color: #cc0066;
-  box-shadow: 0 4px 10px rgba(204, 0, 102, 0.4);
+  background-color: #b03b5a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* ===== Paragraphs ===== */
+/* Paragraph at bottom */
 p {
   text-align: center;
-  color: #800040;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  color: #a14a63;
+  font-style: italic;
 }
 
-/* ===== Add subtle animations ===== */
-input:focus, select:focus, textarea:focus {
-  outline: none;
-  border-color: #ff66b3;
-  box-shadow: 0 0 5px #ff66b3;
+/* List links in portfolio (if you keep them) */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #d94f70;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b03b5a;
 }
