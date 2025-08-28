@@ -1,0 +1,95 @@
+/* ===== Body & General ===== */
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
+  margin: 0;
+  padding: 0;
+  color: #4d1a1a;
+}
+
+/* ===== Headings ===== */
+h1, h2 {
+  text-align: center;
+  color: #b30059; /* deep pink/red */
+  margin-bottom: 1rem;
+}
+
+/* ===== Form Container ===== */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff0f5; /* soft pink background */
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(179, 0, 89, 0.3); /* subtle dramatic shadow */
+}
+
+/* ===== Inputs, Selects & Textareas ===== */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0 1.2rem 0;
+  border: 1px solid #b30059;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #4d1a1a;
+  background: #fff0f5;
+}
+
+/* ===== Labels ===== */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #800040;
+}
+
+/* ===== Radio Buttons & Checkboxes ===== */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* ===== Placeholder Text ===== */
+::placeholder {
+  color: #b36699;
+  font-style: italic;
+}
+
+/* ===== Button ===== */
+button {
+  background-color: #ff3399;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc0066;
+  box-shadow: 0 4px 10px rgba(204, 0, 102, 0.4);
+}
+
+/* ===== Paragraphs ===== */
+p {
+  text-align: center;
+  color: #800040;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Add subtle animations ===== */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #ff66b3;
+  box-shadow: 0 0 5px #ff66b3;
+}
